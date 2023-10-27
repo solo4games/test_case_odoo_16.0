@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_expense_sheet" inherit_id="hr_expense.report_expense_sheet">
+        <xpath
+            expr="//div[hasclass('col-2')]"
+            position="after"
+        >
+            <div class="col-2">
+                <strong>Approval Date:</strong>
+                <p t-field="o.approval_date"/>
+            </div>
+        </xpath>
+    </template>
+</odoo>
